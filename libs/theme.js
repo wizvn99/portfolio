@@ -4,7 +4,10 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#f0e7db', '#202023')(props)
+      bg: mode(
+        'linear-gradient(to right, #E0EAFD , #B2CBEE);',
+        'rgb(26, 32, 44)'
+      )(props)
     }
   })
 }
@@ -41,7 +44,7 @@ const colors = {
 
 const config = {
   initialColorMode: 'dark',
-  useSystemColorMode: true
+  useSystemColorMode: false
 }
 
 const theme = extendTheme({

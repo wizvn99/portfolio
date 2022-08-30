@@ -17,17 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
   return (
     <Layout>
-      <Container>
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mb={6}
-          align="center"
-        >
-          Haiyo!!! I&apos;m a Fullstack developer from VietNam!
-        </Box>
-
+      <Container maxWidth="100%">
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -66,7 +56,7 @@ const Page = () => {
             wizard creating magic stuff!.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works/">
+            <NextLink href="/projects/">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My portfolio
               </Button>

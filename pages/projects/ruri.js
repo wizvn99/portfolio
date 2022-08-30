@@ -7,17 +7,17 @@ import {
   AspectRatio
 } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const Work = () => {
+const Project = () => {
   return (
     <Layout title="Hope Of Ruri">
-      <Container>
+      <Container maxWidth="100%">
         <Title>
           Hope Of Ruri
-          <Badge>2020</Badge>
+          <Badge ml="2">2020</Badge>
         </Title>
         <P>A 2D Metroidvania game built by Unity.</P>
         <List mx={2} my={8}>
@@ -52,12 +52,12 @@ const Work = () => {
             ></iframe>
           </AspectRatio>
         </List>
-        <WorkImage src="/images/works/ruri_01.png" alt="Ruri" />
-        <WorkImage src="/images/works/ruri_02.png" alt="Ruri" />
-        <WorkImage src="/images/works/ruri_03.png" alt="Ruri" />
+        <ProjectImage src="/images/projects/ruri_01.png" alt="Ruri" />
+        <ProjectImage src="/images/projects/ruri_02.png" alt="Ruri" />
+        <ProjectImage src="/images/projects/ruri_03.png" alt="Ruri" />
       </Container>
     </Layout>
   )
 }
 
-export default Work
+export default Project
