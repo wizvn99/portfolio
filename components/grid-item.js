@@ -46,6 +46,25 @@ export const ProjectGridItem = ({ children, id, title, thumbnail }) => {
   )
 }
 
+export const WorkGridItem = ({ children, id, title, thumbnail }) => {
+  return (
+    <Box w="100%" align="center">
+      <LinkBox>
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+        />
+        <Text mt={2} fontSize={20}>
+          {title}
+        </Text>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
+    </Box>
+  )
+}
+
 export const GridItemStyle = () => {
   return (
     <Global
